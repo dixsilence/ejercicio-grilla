@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,900&display=swap');
+//El import se hace acá porque dentro de este scss se llamarán a todas las tipografías, así evitamos sobrecargar el head del html//
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+}

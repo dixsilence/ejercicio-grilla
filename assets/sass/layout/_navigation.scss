@@ -1,0 +1,33 @@
+nav {
+    //background-color: sandybrown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 3rem;
+    //Ojo que esto siempre debería ser h1 por un tema de CEO y backend//
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    li {
+        display: inline-block;
+        padding-right: 0.5rem;
+        a {
+            font-size: 0.8rem;
+            text-decoration: none;
+            color: brown;
+            &:hover {
+                color: red;
+                text-decoration: underline;
+            }
+            &:focus {
+                color: green;
+            }
+        }
+        /*Anidación de un subselector*/
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}

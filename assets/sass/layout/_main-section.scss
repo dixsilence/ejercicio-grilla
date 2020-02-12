@@ -1,0 +1,42 @@
+main {
+    background-color: white;
+    //para que haga flex la galería//
+    display: flex;
+    flex-wrap: wrap; //para que fluyan sin apretarse
+    justify-content: space-around; //para darle un espacio entre las distintas noticias
+}
+
+.noticia {
+    width: 100%;
+    max-width: 300px;
+    //este lo desactivamos porque estas son medidas de desktop, tenemos que cambialas por las de mobile
+    // width: 30%;
+    //Sacamos estos también
+    // .cabecera {
+    //     width: 100%;
+    // }
+    // .cuerpo {
+    //     width: 100%;
+    // }
+    &__img {
+        //Todo esto lo tienen las imágenes en general asi que no tiene que ir acá- 
+        background-image: url(https://picsum.photos/seed/picsum/200/300);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+    }
+}
+
+//Ahora hacemos los media queries para que las galerías se adapten
+@media (min-width:768px) {
+    .noticia {
+        width: 30%;
+        max-width: 300px;
+        &__img {
+            width: 100%;
+            height: 300px;
+        }
+    }
+}
